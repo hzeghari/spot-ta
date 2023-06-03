@@ -13,7 +13,7 @@ const dropdownOptionsList = [
 function Heroreserve({ setShowModal, props }) {
     
     return (
-        <div className="font-archia md:h-[1195px] h-[601px] sm:h-[722px] mt-[69px] relative w-full">
+        <div className="font-archia md:h-[1195px] h-[601px] sm:h-[722px] mt-[43px] relative w-full">
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[0] w-full">
                 <div className="flex flex-col gap-8 items-start justify-start w-full">
                     <div className="flex flex-col items-center justify-start w-full">
@@ -49,7 +49,7 @@ function Heroreserve({ setShowModal, props }) {
                                     />
                                 </Button>
                             </div>
-                            <div className="flex sm:flex-col flex-row font-helveticaneue sm:gap-5 items-center justify-start w-[37%] md:w-full">
+                            <div className="flex mt-[-8px] sm:flex-col flex-row font-helveticaneue sm:gap-5 items-center justify-start w-[37%] md:w-full">
                                 <div className="flex flex-row gap-2 items-center justify-start w-auto">
                                     <Img
                                         src="images/img_location.svg"
@@ -86,18 +86,18 @@ function Heroreserve({ setShowModal, props }) {
                         <div className="flex flex-col items-center justify-start w-full">
                             <div className="flex md:flex-col flex-row gap-4 items-center justify-between w-full">
                                 <div className="flex md:flex-1 flex-col gap-4 items-center justify-start w-[23%] md:w-full">
-                                    <div className="h-[126px] relative rotate-[1800deg] w-full">
+                                    <div className="h-[126px] relative rotate-[360deg] w-full">
                                         <Img
                                             src="images/img_smartworkscowo.png"
                                             className="h-[126px] m-auto object-cover w-full"
                                             alt="smartworkscowo"
                                         />
                                         <div className="absolute h-[126px] inset-[0] justify-center m-auto w-full">
-                                            <Img
+                                            {/* <Img
                                                 src="images/img_davidfintzroj.png"
                                                 className="h-[126px] m-auto object-cover w-full"
                                                 alt="davidfintzroj"
-                                            />
+                                            /> */}
                                             <Img
                                                 src="images/img_adobestock2221.png"
                                                 className="absolute h-[126px] inset-[0] justify-center m-auto object-cover w-full"
@@ -106,11 +106,11 @@ function Heroreserve({ setShowModal, props }) {
                                         </div>
                                     </div>
                                     <div className="h-[126px] relative rotate-[360deg] w-full">
-                                        <Img
+                                        {/* <Img
                                             src="images/img_smartworkscowo.png"
                                             className="h-[126px] m-auto object-cover w-full"
                                             alt="smartworkscowo_One"
-                                        />
+                                        /> */}
                                         <Img
                                             src="images/img_adobestock2220.png"
                                             className="absolute h-[126px] inset-[0] justify-center m-auto object-cover w-full"
@@ -146,7 +146,7 @@ function Heroreserve({ setShowModal, props }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex md:flex-1 flex-col items-center justify-start w-[76%] md:w-full">
+                                <div className="flex md:flex-1 flex-col items-center justify-start w-[79%] md:w-full">
                                     <Img
                                         src="images/img_maskgroup.png"
                                         className="h-[410px] md:h-auto object-cover w-full"
@@ -159,7 +159,7 @@ function Heroreserve({ setShowModal, props }) {
                 </div>
             </div>
             <div
-                className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-helveticaneue h-[447px] items-center justify-start p-9 sm:px-5 right-[0] w-[29%]"
+                className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-helveticaneue h-[447px] items-center justify-start p-9 sm:px-5 right-[0] mr-[-12px] top-[160px] w-[29%]"
                 style={{ backgroundImage: "url('images/img_fixeditem.svg')" }}
             >
                 <div className="flex flex-col items-start justify-start my-[11px] w-[97%] md:w-full">
