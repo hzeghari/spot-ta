@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 
+import { useState } from 'react';
+
 // import Layout from './components/Layout';
 // Our components
 import Header from './components/Header/Header';
@@ -13,13 +15,22 @@ import Footer from './components/Footer/Footer';
 // Layout
 import Layoutgen from './components/Layoutgen';
 
+// modal
+import Picturemodal from './components/Modals/Picturemodal';
+
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <Layoutgen>
       {/* Header */}
       <Header />
       {/* Main */}
-      <Heroreserve />
+      {
+        showModal ? (
+          <Picturemodal setShowModal={setShowModal} />
+        ) : null
+      }
+      <Heroreserve setShowModal={setShowModal}/>
       <Amenities />
       <Meetingroom />
       <Heretohelp />

@@ -10,7 +10,8 @@ const dropdownOptionsList = [
     { label: "Option3", value: "option3" },
 ];
 
-function Heroreserve(props) {
+function Heroreserve({ setShowModal, props }) {
+    
     return (
         <div className="font-archia md:h-[1195px] h-[601px] sm:h-[722px] mt-[69px] relative w-full">
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[0] w-full">
@@ -19,7 +20,7 @@ function Heroreserve(props) {
                         <div className="flex flex-col gap-[21px] items-start justify-start w-full">
                             <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
                                 <Text
-                                    className="text-gray_900 tracking-[-1.28px] uppercase"
+                                    className="text-gray_900 font-archia tracking-[-1.28px] uppercase"
                                     as="h1"
                                     variant="h1"
                                 >
@@ -133,6 +134,7 @@ function Heroreserve(props) {
                                                     className="absolute flex h-14 inset-[0] items-center justify-center m-auto rounded-[50%] w-14"
                                                     size="mdIcn"
                                                     variant="icbFillWhiteA700"
+                                                    onClick={() => { setShowModal(true); }}
                                                 >
                                                     <Img
                                                         src="images/img_grid.svg"
