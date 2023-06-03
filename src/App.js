@@ -27,7 +27,7 @@ function App() {
       {/* Main */}
       {
         showModal ? (
-          <Picturemodal setShowModal={setShowModal} />
+          <Picturemodal setShowModal={setShowModal} images={["/images/img_adobestock1414.png", "/images/img_adobestock2220.png", "/images/img_adobestock2221.png", "/images/img_adobestock2228.png"]}/>
         ) : null
       }
       <Heroreserve setShowModal={setShowModal}/>
